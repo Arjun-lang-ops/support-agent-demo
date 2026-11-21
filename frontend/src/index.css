@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Hanken Grotesk", ui-sans-serif, sans-serif;
+  --color-ink: #1d2433;
+  --color-paper: #eef1f6;
+  --color-panel: #ffffff;
+  --color-line: #d8dee9;
+  --color-muted: #5b6577;
+  --color-signal: #2f5bea;
+  --color-hold: #f2a93b;
+  --color-hold-soft: #fff4dd;
+  --color-ok: #2e8b6a;
+  --color-danger: #c8453b;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+}
